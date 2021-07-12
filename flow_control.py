@@ -47,7 +47,7 @@ for ind in range(1, 6): print(ind)  # Also, range never visits end.
 for x in range(0, 85, 10): print(x)
 
 lines = [ 'append', 'edit', 'replace', 'insert', 'write' ]
-for off in range(len(lines)):  print(off, lines[off])
+for off in range(len(lines)): print(off, lines[off])
 
 print(sum(range(6)))  # One reason having range be an iterable is useful.
 
@@ -90,6 +90,11 @@ if None: pass
 if True: None
 # Python doesn't have "nil", it's "None".
 # The pass statement seems a bit unnecessary if expressions can be standalone..
+
+class StubClass2:
+	None;  # Oui. This works.
+
+print(StubClass2);
 
 def aDecentlyLong(strings):
 	for string in strings:
